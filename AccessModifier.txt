@@ -1,0 +1,42 @@
+package Package1;
+
+public class Default {
+	public static void main(String[] args) {
+		Default D =new Default();
+		System.out.println("This is Default access specifier");
+		System.out.println("You are using Default access specifier");
+	}
+
+}
+
+package Package1;
+
+public class Protected {
+	public static void main(String[] args) {
+		Protected D =new Protected();
+		System.out.println("This is Protected access specifier");
+	}
+
+}
+
+package Package2;
+
+public class Public {
+	public static void main(String[] args) {
+		Public D =new Public();
+		System.out.println("This is Public access specifier");
+	}
+
+}
+
+
+package Package2;
+
+public class Private {
+	public static void main(String[] args) {
+		Private D =new Private();
+		System.out.println("This is Private access specifier");
+	}
+
+}
+

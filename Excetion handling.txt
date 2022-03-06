@@ -1,0 +1,61 @@
+package exceptionhandling;
+import java.io.*;
+import java.util.*;
+
+public class CheckedExceptionHandling {
+
+	public static void main(String[] args)throws FileNotFoundException {
+		
+	    
+	 
+	        // Assigning null value to object of FileInputStream
+	        FileInputStream CheckedExceptionHandling = null;
+	 
+	        // Try block to check for exceptions
+	        try {
+	 
+	            // Giving path where file should exists to read
+	            // content
+	        	CheckedExceptionHandling= new FileInputStream(
+	                "/home/mayur/GFG.txt");
+	        }
+	 
+	        // Catch block to handle exceptions
+	        catch (FileNotFoundException e) {
+	 
+	            // Display message when exception occurs
+	            System.out.println("File does not exist");
+	        }
+
+	}
+
+}
+
+package exceptionhandling;
+
+public class UncheckedExceptions {
+
+	public static void main(String[] args) {
+		System.out.println("Example of Unchecked Exception using multiple try catch\n");
+		try{    
+            int a[]=new int[5];    
+            a[5]=30/0;    
+           }    
+           catch(ArithmeticException e)  
+              {  
+               System.out.println("Arithmetic Exception occurs");  
+              }    
+           catch(ArrayIndexOutOfBoundsException e)  
+              {  
+               System.out.println("ArrayIndexOutOfBounds Exception occurs");  
+              }    
+           catch(Exception e)  
+              {  
+               System.out.println("Parent Exception occurs");  
+              }             
+           System.out.println("This will possible only by using try catch");    
+}  
+  
+
+	}
+

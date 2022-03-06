@@ -1,0 +1,16 @@
+package multithread;
+
+public class ThreadCreationExample extends Thread{
+	public void run() {
+		System.out.println("Example for Thread Creation");
+	
+	}
+	
+	
+	public static void main(String[] args) {
+		ThreadCreationExample Threads= new ThreadCreationExample();
+		Threads.start();
+		
+	
+	}
+}
